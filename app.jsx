@@ -22,14 +22,14 @@ const Header = props => {
   return (
  
   <div className='header'>
-  <div className="col-sm-12">
+  <div className="col-sm-10">
       
         <table className='stats'>
           <tr><td>PLAYERS:</td><td>{props.players.length}</td></tr>
           <tr><td>TOTAL POINTS:</td><td>{props.players.map(x => x.score).reduce((x, y) => x + y)}</td></tr>
         </table>
   </div>
-  <div className="col-sm-3.5">
+  <div className="col-sm-4.5">
         <div className='stopwatch'>
           <h2>STOPWATCH</h2>
           <h1 className='stopwatch-time'>0</h1>
@@ -45,9 +45,13 @@ const PlayerList = ({players})=>{
     {
       players.map((item,index)=>{
             return (
-                    <div key={index} className="player">
-                      
-                    </div>);
+              <div className="player" key={index}>
+              <div className="player-name">
+              {item.name}
+              </div>
+              </div>
+             
+            )       
         })
     }
     </div>);
