@@ -33,7 +33,14 @@ const Header = props => {
         <div className='stopwatch'>
           <h2>STOPWATCH</h2>
           <h1 className='stopwatch-time'>0</h1>
-          <button>start</button><button>reset</button>
+          <div className="row">
+            <div className="col-xs-5">
+          <button >start</button>
+          </div>
+          <div className="col-xs-5">
+            <button>reset</button>
+          </div>
+          </div>
         </div>
       </div>
   </div>
