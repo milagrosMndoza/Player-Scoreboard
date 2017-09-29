@@ -49,6 +49,12 @@ const PlayerList = ({players})=>{
               <div className="player-name">
               {item.name}
               </div>
+              <div className="player-scored counter">
+              <div className="counter-action decrement">-</div>
+              <div className="counter-score">{item.score}</div>
+              <div className="counter-action increment">+</div>
+                      
+              </div>
               </div>
              
             )       
